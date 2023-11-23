@@ -1,16 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Markdown Website</title>
-</head>
-<body>
-    <header>
-    </header>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+      }
+
+      header,
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+
+      main {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1,
+      h3 {
+        color: #333;
+        text-align: center;
+      }
+
+      p {
+        margin-bottom: 1.2em;
+      }
+
+      #markdown-content {
+        font-size: 1.2em;
+        color: #555;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
     <main id="markdown-content"></main>
+
     <footer>
-        <p>© 2023 My Markdown Website</p>
+      <p>© 2023 My Markdown Website</p>
     </footer>
 
     <!-- Include Showdown.js library -->
@@ -18,5 +69,5 @@
 
     <!-- Include your custom script -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
